@@ -6,8 +6,7 @@ connectDB();
 
 app.use(express.json());
 
-const feedbackRoute=require('./routes/feedbackRoute');
-app.use('/api/feedback',feedbackRoute);
+app.use("/api/feedback",require("./routes/feedbackRoutes"));
 
 const PORT=process.env.PORT;
 app.listen(PORT,()=>console.log(`Server started on port ${PORT}`));
