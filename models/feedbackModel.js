@@ -6,7 +6,15 @@ const feedbackSchema=new mongoose.Schema(
             type:String,
             required:true,
         },
+        mobile:{
+            type:Number,
+            required:true,
+        },
         email:{
+            type:String,
+            required:true,
+        },
+        subject:{
             type:String,
             required:true,
         },
