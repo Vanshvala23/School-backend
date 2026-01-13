@@ -4,8 +4,6 @@ const connectDB=require('./config/db');
 const cors = require("cors")
 
 connectDB();
-const cors = require("cors");
-
 app.use(cors({
   origin: [
     "http://localhost:3000",
